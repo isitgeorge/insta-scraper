@@ -1,0 +1,25 @@
+{
+  "name": "insta-scraper",
+  "version": "1.0.0",
+  "description": "Node.js module for getting basic data from instagram without logging",
+  "main": "insta-scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyapt/insta-scraper.git"
+  },
+  "keywords": [
+    "instagram"
+  ],
+  "author": "Ilya Petrusenko <ilyapt4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilyapt/insta-scraper/issues"
+  },
+  "homepage": "https://github.com/ilyapt/insta-scraper#readme",
+  "dependencies": {
+    "request": "^2.75.0"
+  }
+}
