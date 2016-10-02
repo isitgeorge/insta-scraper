@@ -2,6 +2,8 @@
  * Created by ilyapt on 30/09/16.
  */
 
+'use strict';
+
 var request = require('request');
 
 exports.getAccountInfo = function(username, cb){
@@ -12,7 +14,7 @@ exports.getAccountInfo = function(username, cb){
 };
 
 
-exports.getAccountMedias = function(username, param2, param3){
+exports.getAccountMedia = function(username, param2, param3){
     var cb, maxid;
     if(!param3){ cb = param2; maxid = ''; }else{ cb = param3; maxid='&max_id=' + param2; }
     getInstaJson('https://www.instagram.com/' + username + '/media/?__a=1' + maxid
@@ -22,7 +24,7 @@ exports.getAccountMedias = function(username, param2, param3){
 };
 
 
-exports.getMediasByTag = function(tag, param2, param3){
+exports.getMediaByTag = function(tag, param2, param3){
     var cb, maxid;
     if(!param3){ cb = param2; maxid = ''; }else{ cb = param3; maxid='&max_id='+param2; }
     getInstaJson('https://www.instagram.com/explore/tags/' + encodeURIComponent(tag) + '/?__a=1' + maxid
@@ -32,7 +34,7 @@ exports.getMediasByTag = function(tag, param2, param3){
 };
 
 
-exports.getMediasByLocationId = function(locationId, param2, param3){
+exports.getMediaByLocationId = function(locationId, param2, param3){
     var cb, maxid;
     if(!param3){ cb = param2; maxid = ''; }else{ cb = param3; maxid='&max_id='+param2; }
     getInstaJson('https://www.instagram.com/explore/locations/' + locationId + '/?__a=1' + maxid

@@ -1,5 +1,5 @@
 # insta-scraper
-Node.js module for getting basic data from instagram without logging
+Node.js module for getting basic data from instagram without login
 
 ## Installation
 ```
@@ -8,7 +8,7 @@ soon
 
 ## Usage
 ```
-var scraper = require('scraper');
+var scraper = require('insta-scraper');
 ```
 **insta-scraper** offers these promise methods:
 ```
@@ -16,15 +16,15 @@ scraper.getAccountInfo(username, function(response_json){ })
 ```
 
 ```
-scraper.getAccountMedias(username, [max_id], function(response_json){ })
+scraper.getAccountMedia(username, [max_id], function(response_json){ })
 ```
 
 ```
-scraper.getMediasByTag(tag, [max_id], function(response_json){ })
+scraper.getMediaByTag(tag, [max_id], function(response_json){ })
 ```
 
 ```
-scraper.getMediasByLocationId(locationId, [max_id], function(response_json){ })
+scraper.getMediaByLocationId(locationId, [max_id], function(response_json){ })
 ```
 
 ```
